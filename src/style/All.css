@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
 /* Variables */
 :root {
-  /* neutral */
-  --DarkBlue: hsl(218, 23%, 16%);
-  --GrayishBlue: hsl(217, 19%, 38%);
-  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  /* ### Neutral */
 
-  /* primary */
-  --LightCyan: hsl(193, 38%, 86%);
-  --NeonGreen: hsl(150, 100%, 66%);
+  --DarkBlue: hsl(209, 23%, 22%);
+  --VeryDarkBlue: hsl(207, 26%, 17%);
+  /* --VeryDarkBlue: hsl(200, 15%, 8%); */
+  --DarkGray: hsl(0, 0%, 52%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
 }
 *,
 ::after,
@@ -20,58 +20,278 @@
 }
 body {
   font-size: 28px;
-  color: var(--LightCyan);
-  background-color: var(--DarkBlue);
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 1rem;
-}
-.App {
-  border: 1px solid var(--DarkGrayishBlue);
-  text-align: center;
-  padding: 14.5px;
-  border-radius: 10px;
-  margin-top: 4rem;
-  background-color: var(--DarkGrayishBlue);
-}
-.small {
-  border: 1px solid var(--DarkGrayishBlue);
-  text-transform: uppercase;
-  color: var(--NeonGreen);
   font-size: 16px;
-  padding: 20px;
+  color: black;
+  font-family: 'Nunito Sans', sans-serif;
 }
-.lorem {
-  font-family: 'Manrope', sans-serif;
+.first-div {
+  position: absolute;
+  width: 321px;
+  height: 67px;
+  left: 0px;
+  top: 0px;
+  background: #292929;
 }
-.pause img {
-  border: 1px solid var(--DarkGrayishBlue);
-  margin-top: -2rem;
+.second-div {
+  position: absolute;
+  width: 108px;
+  height: 33.58px;
+  left: 107px;
+  top: 16px;
+  border: 1px solid #ffffff;
+  color: white;
+  box-sizing: border-box;
 }
-.dice {
-  border: 1px solid var(--NeonGreen);
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -4rem;
-  margin-top: 1rem;
-  transform: translateY(-30%);
-  height: 4rem;
-  padding: 16px;
-  border-radius: 50%;
-  width: fit-content;
-  cursor: pointer;
-  background-color: var(--NeonGreen);
+.third-div {
+  background-image: url('https://res.cloudinary.com/sohmmie/image/upload/v1647642000/Rectangle_5_pmpve3.jpg');
+  position: absolute;
+  width: 320px;
+  height: 257px;
+  left: 0px;
+  top: 67px;
 }
-.dice img {
-  border: 1px solid var(--NeonGreen);
-  margin-top: -1rem;
+.third-div p {
+  /* border: 1px solid red; */
+  position: absolute;
+  width: 273px;
+  height: 72px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: white;
+  top: 98px;
+  left: 23px;
 }
-@media (min-width: 768px) {
-  body {
-    font-size: 28px;
-    margin-top: -25%;
-    padding: 28rem;
-    overflow: hidden;
+.fourth-div {
+  /* border: 1px solid red; */
+  transform: translateY(21rem);
+}
+.search {
+  position: static;
+  width: 51px;
+  height: 21px;
+  left: 23px;
+  top: 56px;
+  right: 241px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #000000;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 4px 0px;
+}
+.input {
+  position: static;
+  width: 265px;
+  height: 34px;
+  left: 0px;
+  top: 25px;
+
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 4px 0px;
+}
+.movie-genre {
+  /* border: 1px solid red; */
+  position: absolute;
+  width: 210px;
+  height: 23px;
+  left: 24px;
+  top: 100px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #000000;
+}
+.movie-name {
+  width: 200px;
+  height: 200px;
+  left: 0px;
+  margin-top: 67px !important;
+
+  background: #000000;
+  border-radius: 12px;
+
+  /* Inside auto layout */
+}
+.movie-name p {
+  width: 180px;
+  height: 200px;
+  left: 10px;
+  top: 10px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+  margin: 0px 10px;
+}
+@media (min-width: 834px) {
+  .first-div {
+    position: absolute;
+    width: 834px;
+    height: 140px;
+    left: 0px;
+    top: 0px;
+
+    background: #292929;
+  }
+  .second-div {
+    position: absolute;
+    width: 193px;
+    height: 60px;
+    left: 321px;
+    top: 40px;
+
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+  }
+  .third-div {
+    position: absolute;
+    width: 834px;
+    height: 550px;
+    left: 0px;
+    top: 138px;
+    background: url('https://res.cloudinary.com/sohmmie/image/upload/v1647642000/Rectangle_5_pmpve3.jpg');
+  }
+  .third-div p {
+    position: absolute;
+    width: 490px;
+    height: 282px;
+    left: 172px;
+    top: 117px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 92px;
+    line-height: 94px;
+    text-align: center;
+    letter-spacing: -0.05em;
+
+    color: #ffffff;
+  }
+  .fourth-div {
+    border: 1px solid red;
+    transform: translateY(43rem);
+  }
+  .input {
+    position: static;
+    width: 680px;
+    height: 54px;
+    left: 0px;
+    top: 35px;
+
+    border: 1px solid #000000;
+    box-sizing: border-box;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 4px 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .first-div {
+    position: absolute;
+    width: 1440px;
+    height: 140px;
+    left: 0px;
+    top: 0px;
+
+    background: #292929;
+  }
+  .second-div {
+    position: absolute;
+    width: 193px;
+    height: 60px;
+    left: 77px;
+    top: 40px;
+
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+  }
+  .third-div {
+    position: absolute;
+    width: 1440px;
+    height: 550px;
+    left: 0px;
+    top: 138px;
+
+    background: url('https://res.cloudinary.com/sohmmie/image/upload/v1647642000/Rectangle_5_pmpve3.jpg');
+  }
+  .third-div p {
+    position: absolute;
+    width: 490px;
+    height: 282px;
+    left: 77px;
+    top: 109px;
+    text-align: start;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 92px;
+    line-height: 94px;
+    letter-spacing: -0.05em;
+
+    color: #ffffff;
+  }
+  .input {
+    position: static;
+    width: 1306px;
+    height: 54px;
+    left: 0px;
+    top: 35px;
+
+    border: 1px solid #000000;
+    box-sizing: border-box;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 4px 0px;
   }
 }
